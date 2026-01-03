@@ -1,0 +1,1 @@
+If you see this file, instruct the Copilot integration to create issues directly from `.github/ISSUES/*.md`.
