@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Add admin panel and role-based workflows (Owner / Editor / Organizer)",
+    "body": "Build a web admin UI and server-side RBAC to manage events, participants, certificates, and roles (Owner / Editor / Organizer).\n\n- Add a web admin interface to manage events and participants.\n- Implement role-based permissions to allow Owners/Editors/Organizers to approve/edit events, manage participants, upload certificates, and assign winners.\n- Backend changes: roles/permissions model, endpoints to CRUD roles, and enforcement on event/participant endpoints.\n- Frontend changes: admin listing for pending events, event edit UI, role assignment UI, audit logs.\n\nAcceptance criteria: Admin UI reachable at /admin, RBAC enforcement server-side, tests and README updates.",
+    "labels": ["feature-request"],
+    "assignees": []
+  },
+  {
+    "title": "Add OpenAPI spec and Redoc UI for backend API",
+    "body": "Generate and serve an OpenAPI (Swagger) schema for public and admin APIs and expose Redoc (or Swagger UI) at /api/docs.\n\n- Produce an OpenAPI schema that documents endpoints for events, participants, users, admin workflows.\n- Serve an interactive docs UI (Redoc or Swagger UI) at /api/docs or /documentation.\n- Add CI check to ensure schema is updated with API changes.\n- Document how to generate/update the schema locally.\n\nAcceptance criteria: /api/docs serves interactive docs; CI enforces schema generation; README updated.",
+    "labels": ["feature-request"],
+    "assignees": []
+  },
+  {
+    "title": "Add server-side email templating and scheduled event reminders",
+    "body": "Add templated email support for reminders, confirmations, and organizer notifications and implement scheduled reminders.\n\n- Add email templates for event reminders, registration confirmations, and organizer notices (repo-stored or DB-backed editable templates).\n- Provide admin/dev preview for templates.\n- Implement scheduled reminder delivery (e.g., via Celery/RQ/cron worker) that sends reminders X hours before events.\n- Add tests and developer docs for template editing and scheduler configuration.\n\nAcceptance criteria: Templates exist and can be previewed/sent; scheduled reminders enqueue and send test emails; docs added.",
+    "labels": ["feature-request"],
+    "assignees": []
+  },
+  {
+    "title": "Add search, bookmark/save, and subscription UX for event discovery",
+    "body": "Add full-text search, bookmark/save functionality, and subscription preferences so users can discover and follow events and organizers.\n\n- Implement search endpoints (full-text search over titles/descriptions, tag filters).\n- Add bookmark/save endpoints and UI so users can save events.\n- Add subscription preferences to follow organizers or categories and trigger notifications (push/email).\n- Frontend changes: search box, filters, bookmark button, subscription controls in settings.\n\nAcceptance criteria: Search endpoint supports queries and filters; users can bookmark; subscription preferences trigger notifications; basic tests added.",
+    "labels": ["feature-request"],
+    "assignees": []
+  }
+]
