@@ -1,0 +1,1 @@
+Run `ISSUE_CREATION_SCRIPTS/create_issues.py` locally with `GH_TOKEN` set to create the issues automatically. If the project owner grants the integration issue-creation permission, I can create the issues directly with the API.
