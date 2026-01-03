@@ -1,0 +1,8 @@
+[
+  {
+    "title": "Add admin panel and role-based workflows (Owner / Editor / Organizer)",
+    "body": "Build a web admin UI and server-side RBAC to manage events, participants, certificates, and roles (Owner / Editor / Organizer).\n\n- Add a web admin interface to manage events and participants.\n- Implement role-based permissions to allow Owners/Editors/Organizers to approve/edit events, manage participants, upload certificates, and assign winners.\n- Backend changes: roles/permissions model, endpoints to CRUD roles, and enforcement on event/participant endpoints.\n- Frontend changes: admin listing for pending events, event edit UI, role assignment UI, audit logs.\n\nAcceptance criteria: Admin UI reachable at /admin, RBAC enforcement server-side, tests and README updates.",
+    "labels": ["feature-request"],
+    "assignees": []
+  }
+]
